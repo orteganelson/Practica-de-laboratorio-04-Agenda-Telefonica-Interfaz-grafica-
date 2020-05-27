@@ -41,9 +41,9 @@ public class VistaTelf extends Frame {
         Button boton1 = new Button("Agregar");
         Button boton2 = new Button("Volver");
         TextField txt1 = new TextField(25);
-        TextField txt2 = new TextField();
-        TextField txt3 = new TextField();
-        TextField txt4 = new TextField();
+        TextField txt2 = new TextField(25);
+        TextField txt3 = new TextField(25);
+        TextField txt4 = new TextField(25);
         GridLayout matriz1= new GridLayout(7,1);
         GridLayout matriz2= new GridLayout(5,1);
         BorderLayout P1= new BorderLayout();
@@ -62,17 +62,49 @@ public class VistaTelf extends Frame {
         o1.add(boton2);
         
         e1.setLayout(matriz2);
-        e1.add(nombre1);
         e1.add(txt1);
         e1.add(txt2);
         e1.add(txt3);
         e1.add(txt4);
+      BorderLayout P2= new BorderLayout();
+        panel2.setLayout(P2);
+        Panel e2 = new Panel();
+        Panel o2 = new Panel();
+        panel2.add(e2,BorderLayout.EAST);
+        panel2.add(o2,BorderLayout.CENTER);
+        GridLayout matriz3= new GridLayout(8,1);
+        GridLayout matriz4= new GridLayout(4,1);
+        Label nombre3 = new Label("Editar Teléfono");
+        Label nombre4 = new Label("Nuevos datos");
+        Label codigo2 = new Label("Ingrese el código");
+        Label num2 = new Label("Ingrese el número");
+        Label tipo2= new Label("Ingrese el tipo");
+        Label operadora2= new Label("Ingrese la operadora");
+        TextField txt5 = new TextField(25);
+        TextField txt6 = new TextField(25);
+        TextField txt7 = new TextField(25);
+        TextField txt8 = new TextField(25);
+        Button boton3 = new Button("Editar");
+        Button boton4 = new Button("Volver");
+        
+        o2.setLayout(matriz3);
+        o2.add(nombre3);
+        o2.add(nombre4);
+        o2.add(codigo2);
+        o2.add(num2);
+        o2.add(tipo2);
+        o2.add(operadora2);
+        o2.add(boton3);
+        o2.add(boton4);
+        e2.setLayout(matriz4);
+        e2.add(txt5);
+        e2.add(txt6);
+        e2.add(txt7);
+        e2.add(txt8);
+
+            
         
         this.add(panelPr);
-        
-        
-        
-        
         this.setVisible(true);
         
     }
