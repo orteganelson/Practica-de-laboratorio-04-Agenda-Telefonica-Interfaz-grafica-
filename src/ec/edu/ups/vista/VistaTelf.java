@@ -68,7 +68,7 @@ public class VistaTelf extends Frame {
         e1.add(txt4);
         
         
-      BorderLayout P2= new BorderLayout();
+        BorderLayout P2= new BorderLayout();
         panel2.setLayout(P2);
         Panel e2 = new Panel();
         Panel o2 = new Panel();
@@ -104,18 +104,47 @@ public class VistaTelf extends Frame {
         e2.add(txt7);
         e2.add(txt8);
 
-         
-        Label nombre5 = new Label("Ingrese código del telefono");
+        
+        Label nombre5 = new Label("Eliminar teléfono");
+        Label nombre6 = new Label("Ingrese código del telefono");
         TextField txt9 = new TextField(25);
         Button boton5= new Button("Eliminar");
         Button boton6= new Button("Volver");
-        GridLayout matriz5= new GridLayout(4,1);
+        GridLayout matriz5= new GridLayout(5,1);
         panel3.setLayout(matriz5);
         panel3.add(nombre5);
+        panel3.add(nombre6);
         panel3.add(txt9);
         panel3.add(boton5);
         panel3.add(boton6);
         
+        Label nombre7 = new Label("Buscar Teléfono");
+        Label nombre8 = new Label("Ingrese código del teléfono");
+        TextField txt10 = new TextField(25);
+        Button boton7= new Button("Buscar");
+        Button boton8= new Button("Volver");
+        GridLayout matriz6= new GridLayout(5,1);
+        panel4.setLayout(matriz6);
+        panel4.add(nombre7);
+        panel4.add(nombre8);
+        panel4.add(txt10);
+        panel4.add(boton7);
+        panel4.add(boton8);
+        
+        
+        Label nombre9 = new Label("¿Desea listar sus teléfonos?");
+        Button boton9= new Button("Listar");
+        Button boton10= new Button("Volver");
+        GridLayout matriz7= new GridLayout(3,1);
+        panel5.setLayout(matriz7);
+        panel5.add(nombre9);
+        panel5.add(boton9);
+        panel5.add(boton10);
+        
+         BorderLayout P3= new BorderLayout();
+         panel6.setLayout(P3);
+        Button boton11 = new Button("Cerrar Sesion");
+        panel6.add(boton11,BorderLayout.CENTER);
         this.add(panelPr);
         this.setVisible(true);
         
