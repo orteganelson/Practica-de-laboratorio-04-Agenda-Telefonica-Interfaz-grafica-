@@ -66,6 +66,8 @@ public class VistaTelf extends Frame {
         e1.add(txt2);
         e1.add(txt3);
         e1.add(txt4);
+        
+        
       BorderLayout P2= new BorderLayout();
         panel2.setLayout(P2);
         Panel e2 = new Panel();
@@ -102,7 +104,17 @@ public class VistaTelf extends Frame {
         e2.add(txt7);
         e2.add(txt8);
 
-            
+         
+        Label nombre5 = new Label("Ingrese código del telefono");
+        TextField txt9 = new TextField(25);
+        Button boton5= new Button("Eliminar");
+        Button boton6= new Button("Volver");
+        GridLayout matriz5= new GridLayout(4,1);
+        panel3.setLayout(matriz5);
+        panel3.add(nombre5);
+        panel3.add(txt9);
+        panel3.add(boton5);
+        panel3.add(boton6);
         
         this.add(panelPr);
         this.setVisible(true);
